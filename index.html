@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Sistema de empleados</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/est.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <form action="" class="registro" >
+      <h4 style="text-align: center;">Datos personales.</h4>
+      <img src="img/perfil.png" class="img"/>
+      <br><br>
+      <div>
+        <h5 style="text-align: center;">Nombre: <input class="dato" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"></h5>
+        <h5 style="text-align: center;">Apellido:  <input class="dato" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido">
+
+        </h5>
+       
+        <h5 style="text-align: center;">Sexo:
+        <select class="dato">
+          <option disabled selected>Elija una opcion</option>
+          <option>Masculino</option>
+          <option>Femenino</option>
+          <option>Otro</option>
+      </select></h5>
+      <h5 style="text-align: center;">Fecha de Naciminiento: <input type="date"></h5>
+      <h5 style="text-align: center;">Fecha de ingreso: <input type="date"></h5>
+
+        
+      </div>
+    </form>
+    <form action="" class="registro">
+      <h4 style="text-align: center;">Salario</h4>
+      <h5>Salario: <input type="number"><button type="button" class="btn btn-dark">Modificar</button></h5>
+    </form>
+
+    <form action="" class="registro">
+      <button type="button" class="btn btn-dark">Calcular Edad</button> <input type="text" class="dato"> <br> <br>
+      <button type="button" class="btn btn-dark">Calcular Antiguedad</button>  <input type="text" class="dato"> <br> <br>
+      <button type="button" class="btn btn-dark">Calcular Prestaciones</button>  <input type="text" class="dato"><br> <br>
+
+    </form>
+    <form action="" class="registro">
+    <h4>Puntos de Extencion</h4>
+    <div class="container">
+      <center>
+      <button type="button"  class="btn btn-dark btn-rounded">Opcion 1</button>
+      <button type="button" class="btn btn-dark btn-rounded">Opcion 2</button>
+    </center> 
+    </div>
+</form>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
