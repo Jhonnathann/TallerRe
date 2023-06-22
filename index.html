@@ -20,7 +20,10 @@
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
     <link rel="stylesheet" href="css/est.css">
+
+    <script type="text/javascript" src="js/funciones.js"></script>
   </head>
+
   <body>
     <!-- Start your project here-->
     <form action="" class="registro" >
@@ -29,9 +32,7 @@
       <br><br>
       <div>
         <h5 style="text-align: center;">Nombre: <input class="dato" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"></h5>
-        <h5 style="text-align: center;">Apellido:  <input class="dato" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido">
-
-        </h5>
+        <h5 style="text-align: center;">Apellido:  <input class="dato" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido"></h5>
        
         <h5 style="text-align: center;">Sexo:
         <select class="dato">
@@ -40,8 +41,10 @@
           <option>Femenino</option>
           <option>Otro</option>
       </select></h5>
-      <h5 style="text-align: center;">Fecha de Naciminiento: <input type="date"></h5>
-      <h5 style="text-align: center;">Fecha de ingreso: <input type="date"></h5>
+      <h5 style="text-align: center;">Fecha de Nacimiento: 
+        <input type="text" id="Fecha_Nacimiento" placeholder="1980-01-01"></h5>
+      <h5 style="text-align: center;">Fecha de ingreso: 
+        <input type="text" id="Fecha_Antiguedad" placeholder="2010-05-15"></h5>
 
         
       </div>
@@ -52,9 +55,13 @@
     </form>
 
     <form action="" class="registro">
-      <button type="button" class="btn btn-dark">Calcular Edad</button> <input type="text" class="dato"> <br> <br>
-      <button type="button" class="btn btn-dark">Calcular Antiguedad</button>  <input type="text" class="dato"> <br> <br>
-      <button type="button" class="btn btn-dark">Calcular Prestaciones</button>  <input type="text" class="dato"><br> <br>
+      <button onclick="calcular_edad()" type="button" class="btn btn-dark">Calcular Edad</button> 
+      <input type="text" id="edad" class="dato"><br><br>
+      
+      <button onclick="calcular_antiguedad()" type="button" class="btn btn-dark">Calcular Antiguedad</button>  
+      <input type="text" class="dato"> <br> <br>
+      <button onclick="calcular_prestaciones()" type="button" class="btn btn-dark">Calcular Prestaciones</button>  
+      <input type="text" class="dato"><br> <br>
 
     </form>
     <form action="" class="registro">
@@ -73,4 +80,5 @@
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
   </body>
+
 </html>
