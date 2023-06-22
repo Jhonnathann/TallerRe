@@ -28,41 +28,60 @@
       <img src="img/perfil.png" class="img"/>
       <br><br>
       <div>
-        <h5 style="text-align: center;">Nombre: <input class="dato" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"></h5>
-        <h5 style="text-align: center;">Apellido:  <input class="dato" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido">
-
-        </h5>
+        <h5 style="text-align: center;">Nombre: </h5>
+        <center>
+          <input  class="dato" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre">
+        </center> <br>
+        
+        <h5 style="text-align: center;">Apellido:  </h5>
+        <center>
+          <input class="dato" type="text" name="Apellido" id="Apellido" placeholder="Ingrese su apellido">
+        </center> <br>
        
-        <h5 style="text-align: center;">Sexo:
-        <select class="dato">
-          <option disabled selected>Elija una opcion</option>
-          <option>Masculino</option>
-          <option>Femenino</option>
-          <option>Otro</option>
-      </select></h5>
-      <h5 style="text-align: center;">Fecha de Naciminiento: <input type="date"></h5>
-      <h5 style="text-align: center;">Fecha de ingreso: <input type="date"></h5>
+        <h5 style="text-align: center;">Sexo:  </h5>
+        <center>
+          <select class="dato">
+            <option disabled selected>Elija una opcion</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otro</option>
+        </select>
+        </center><br>
+
+      <h5 style="text-align: center;">Fecha de Naciminiento: </h5>
+      <center>
+        <input style="text-align: center;" class="dato" type="date">
+      </center>
+
+      <h5 style="text-align: center;">Fecha de ingreso: </h5>
+      <center>
+        <input style="text-align: center;" class="dato" type="date">
+      </center>
 
         
       </div>
     </form>
+    <center>
     <form action="" class="registro">
       <h4 style="text-align: center;">Salario</h4>
-      <h5>Salario: <input type="number"><button type="button" class="btn btn-dark">Modificar</button></h5>
+      <input type="number"><br> <br>
+      <button type="button" class="btn btn-warning btn-rounded btn-sm">Modificar</button>
     </form>
+  </center>
 
-    <form action="" class="registro">
-      <button type="button" class="btn btn-dark">Calcular Edad</button> <input type="text" class="dato"> <br> <br>
-      <button type="button" class="btn btn-dark">Calcular Antiguedad</button>  <input type="text" class="dato"> <br> <br>
-      <button type="button" class="btn btn-dark">Calcular Prestaciones</button>  <input type="text" class="dato"><br> <br>
-
+  <center>
+    <form action="" class="registro" id="Modificar">
+      <button type="button" class="btn btn-warning btn-rounded btn-sm">Calcular Edad</button>  <br> <br>
+      <button type="button" class="btn btn-warning btn-rounded btn-sm">Calcular Antiguedad</button>  <br> <br>
+      <button type="button" class="btn btn-warning btn-rounded btn-sm">Calcular Prestaciones</button> <br> <br>
     </form>
+    </center>
     <form action="" class="registro">
     <h4>Puntos de Extencion</h4>
     <div class="container">
       <center>
-      <button type="button"  class="btn btn-dark btn-rounded">Opcion 1</button>
-      <button type="button" class="btn btn-dark btn-rounded">Opcion 2</button>
+      <button type="button"  class="btn btn-warning btn-rounded btn-sm">Opcion 1</button>
+      <button type="button" class="btn btn-warning btn-rounded btn-sm" >Opcion 2</button>
     </center> 
     </div>
 </form>
