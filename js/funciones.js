@@ -77,13 +77,16 @@ class Empleado {
 
     calcularPrestaciones(){
         // Obtiene el elemento de la fecha de ingreso mediante su id
-        var inputSalario = document.getElementById("Salario");
-        // Obtiene el valor del salario
-        var SalarioValor = new Date(inputSalario.value); 
+        var ValorSalario = document.getElementById("Salario").value;
 
+        //obtiene la antiguedad del empleado
+        var antiguedadEmp = this.calcularAntiguedad();
+
+        //hacemos el calculo con la formula para las prestaciones del empleado y retornamos el valor
         var prestaciones;
-        //prestaciones = (calcular_antiguedad() * SalarioValor)/12;
-        return SalarioValor;
+        prestaciones = (( antiguedadEmp * ValorSalario )/12);
+
+        return prestaciones;
     }
 }
 
@@ -113,7 +116,7 @@ function calcular_antiguedad(){
 
 function calcular_prestaciones(){
     var prestaciones_empleado = E1.calcularPrestaciones();
-    alert ('Las prestaciones del empleado es: '+ prestaciones_empleado);
+    alert ('Las prestaciones del empleado es: $'+ prestaciones_empleado+' pesos');
 }
 
 
