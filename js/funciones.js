@@ -34,7 +34,7 @@ class Empleado {
     }
 
 
-    //Metodos para la seccion Calculos
+    //-----------------------------------------------------------Metodos para la seccion Calculos-----------------------------------------------------------
     calcularEdad() {
         //Obtiene el elemento del input mediante su id que es "Fecha_Nacimiento"
         var inputFechaNacimiento = document.getElementById("Fecha_Nacimiento");
@@ -76,9 +76,14 @@ class Empleado {
     }
 
     calcularPrestaciones(){
-        const antiguedad = this.calcularAntiguedad();
-        const prestaciones = antiguedad * this.salario * 0.15;
-        return prestaciones;
+        // Obtiene el elemento de la fecha de ingreso mediante su id
+        var inputSalario = document.getElementById("Salario");
+        // Obtiene el valor del salario
+        var SalarioValor = new Date(inputSalario.value); 
+
+        var prestaciones;
+        //prestaciones = (calcular_antiguedad() * SalarioValor)/12;
+        return SalarioValor;
     }
 }
 
@@ -107,7 +112,8 @@ function calcular_antiguedad(){
 }
 
 function calcular_prestaciones(){
-
+    var prestaciones_empleado = E1.calcularPrestaciones();
+    alert ('Las prestaciones del empleado es: '+ prestaciones_empleado);
 }
 
 
