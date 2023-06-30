@@ -126,14 +126,12 @@ function ingresar(){
     var NombreE = localStorage.getItem("valorArchivo1");
     var ApellidoE = localStorage.getItem("valorArchivo2");
     var SexoE = localStorage.getItem("valorArchivo3");
-    var EdadE = localStorage.getItem("valorArchivo6");
-
 
     var NivelAcademico = document.getElementById("Nacademico").value;
     var correo = document.getElementById("Email").value;;
     var tel = document.getElementById("Telefono").value;;
 
-    var datosEmpleado = [NombreE, ApellidoE,SexoE,EdadE, NivelAcademico, correo, tel];
+    var datosEmpleado = [NombreE, ApellidoE,SexoE, NivelAcademico, correo, tel];
 
     if (tel.length < 10 ||tel.length > 10) {
         alert("el telefono debe tener 10 caracteres");
