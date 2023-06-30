@@ -41,11 +41,23 @@
       }
     </script>
 
-<script>
-  function opcion2() {
-    window.open("Opcion2.html", "ventana", "width=1000, height=400");
-  }
-</script>
+    <script>
+      function opcion2() {
+        window.open("Opcion2.html", "ventana", "width=1000, height=250");
+      }
+    </script>
+
+    <script>
+      function modificar(){
+        //abrir ventana
+        window.open("Salario.html", "ventana", "width=1000, height=250");
+
+        
+      }
+
+    </script>
+
+
   </head>
 
   <body>
@@ -77,19 +89,19 @@
       <h4 style="text-align: center;">Salario</h4>
       <h5>Salario: 
         <input type="text" id="Salario" placeholder="$ 2 000 000">
-        <button type="button" class="btn btn-dark">Modificar</button></h5>
+        <button onclick="modificar()" type="button" class="btn btn-dark">Modificar</button></h5>
     </form>
 
     <form action="" class="registro">
       <h4 align="center">Calculos:</h4>
       <button onclick="calcular_edad()" type="button" class="btn btn-dark">Calcular Edad empleado</button> 
-      <input type="text" id="edad" class="dato"><br><br>
+      <input type="text" id="edad" class="dato"><label for="">Años</label><br><br> 
       
       <button onclick="calcular_antiguedad()" type="button" class="btn btn-dark">Calcular Antiguedad empleado</button>  
-      <input type="text" class="dato"> <br> <br>
+      <input type="text" id="antigue" class="dato"> <label for=""> Años</label> <br> <br> 
 
       <button onclick="calcular_prestaciones()" type="button" class="btn btn-dark">Calcular Prestaciones empleado</button>  
-      <input type="text" class="dato"><br> <br>
+      <input type="text" id="presta" class="dato"><label for="">$</label><br> <br>
     </form>
 
     <form action="" class="registro">

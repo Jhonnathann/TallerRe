@@ -99,8 +99,7 @@ function calcular_edad(){
     if(edad_empleado < 1){
 		alert ('la edad no puede ser menor que 1');
     }else{
-        //document.getElementById("edad").innerHTML = "->" + edadEmpleado;
-        alert ('La edad es: '+ edad_empleado);
+        document.getElementById("edad").value = edad_empleado;
     }
 }
 
@@ -110,13 +109,15 @@ function calcular_antiguedad(){
 		alert ('la antiguedad no puede ser menor que 1');
     }else{
         //document.getElementById("edad").innerHTML = "->" + edadEmpleado;
-        alert ('La antiguedad del empleado es: '+ antiguedad_empleado+' años');
+       // alert ('La antiguedad del empleado es: '+ antiguedad_empleado+' años');
+        document.getElementById("antigue").value = antiguedad_empleado;
     }
 }
 
 function calcular_prestaciones(){
     var prestaciones_empleado = E1.calcularPrestaciones();
-    alert ('Las prestaciones del empleado es: $'+ prestaciones_empleado+' pesos');
+    //alert ('Las prestaciones del empleado es: $'+ prestaciones_empleado+' pesos');
+    document.getElementById("presta").value = prestaciones_empleado;
 }
 //--------------------------Opcion1----------------------------------------------------------
 
@@ -152,6 +153,23 @@ function ingresar(){
 }
 
 //--------------------------------------------------------------------------------------------
+
+function cambiar(){
+
+    //---------------
+    var salarioE = localStorage.getItem("valorArchivo4");
+    
+    document.getElementById("Salario").value = salarioE;
+}
+
+function Generar(){
+    
+
+    var min = 5;
+    var max = 15000;
+    var numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+    document.getElementById("Naleatorio").value = numeroAleatorio;
+}
 
 
 
