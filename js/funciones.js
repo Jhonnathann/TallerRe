@@ -118,6 +118,43 @@ function calcular_prestaciones(){
     var prestaciones_empleado = E1.calcularPrestaciones();
     alert ('Las prestaciones del empleado es: $'+ prestaciones_empleado+' pesos');
 }
+//--------------------------Opcion1----------------------------------------------------------
+
+
+function ingresar(){
+    var NombreE = localStorage.getItem("valorArchivo1");
+    var ApellidoE = localStorage.getItem("valorArchivo2");
+    var SexoE = localStorage.getItem("valorArchivo3");
+
+    var NivelAcademico = document.getElementById("Nacademico").value;
+    var correo = document.getElementById("Email").value;;
+    var tel = document.getElementById("Telefono").value;;
+
+    var datosEmpleado = [NombreE, ApellidoE,SexoE, NivelAcademico, correo, tel];
+
+    if (tel.length < 10 ||tel.length > 10) {
+        alert("el telefono debe tener 10 caracteres");
+        return false;
+    }else{
+        if (!correo.includes("@")) {
+            alert("Ingrese una dirección de correo electrónico válida");
+            return false;
+        }else{
+            if (NivelAcademico.length < 3){
+                alert("Digite su nivel academico");
+                return false;
+            }
+        }
+    }
+    
+    alert ("--------------DATOS DEL EMPLEADO-------------- \n"
+            +datosEmpleado.join("\n")+"\n----------------------------------------------------");
+}
+
+//--------------------------------------------------------------------------------------------
+
+
+
 
 
   
